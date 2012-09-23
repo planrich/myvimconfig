@@ -3,7 +3,7 @@ syntax on
 
 filetype plugin indent on
 
-colo desert
+colo pyte
 
 " dont use tabs
 set expandtab
@@ -16,8 +16,16 @@ set wildmenu
 " set numbers on the left side
 set nu
 
-" set cmdline height
-set ch = 2
+set stl=%f\ %m\ %r%{fugitive#statusline()}\ line:%l/%L[%p%%]\ col:%v\ buf:#%n\ [%b][0x%B]
 
+" set cmdline height
+set ch=2
+
+set laststatus=2
+
+" don't care about whitespace stuff
 set diffopt+=iwhite
+
+set autoindent
+
 
