@@ -1,3 +1,11 @@
+" gui stuff
+
+" remove menu tool and scroll bar
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
 call pathogen#infect()
 syntax on
 
@@ -28,4 +36,26 @@ set diffopt+=iwhite
 
 set autoindent
 
+set cursorline
 
+let mapleader = ","
+
+nmap <silent> ,cd :lcd %:h<CR>
+
+nmap <silent> ,cr :source ~/.vimrc<CR>
+
+map <S-Insert> <MiddleMouse>
+
+noremap <silent> ,mh <C-W>H
+noremap <silent> ,mj <C-W>J
+noremap <silent> ,mk <C-W>K
+noremap <silent> ,ml <C-W>L
+
+noremap <silent> ,h <C-W>h
+noremap <silent> ,o <C-W>o
+noremap <silent> ,j <C-W>j
+noremap <silent> ,k <C-W>k
+noremap <silent> ,l <C-W>l
+
+" some java stuff
+nnoremap <silent> <buffer> ,i :JavaImport<cr>
