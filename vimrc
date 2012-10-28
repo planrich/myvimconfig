@@ -59,3 +59,7 @@ noremap <silent> ,l <C-W>l
 
 " some java stuff
 nnoremap <silent> <buffer> ,i :JavaImport<cr>
+
+syntax enable
+au BufRead,BufNewFile *.kaa set filetype=kaa
+
