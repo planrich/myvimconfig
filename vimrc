@@ -67,3 +67,7 @@ augroup java_utils
     au!
     au BufEnter *.java call MapJavaUtils()
 augroup END
+
+" custom syntax
+syntax enable
+au BufRead,BufNewFile *.kaa set filetype=kaa
