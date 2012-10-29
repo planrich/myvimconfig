@@ -58,4 +58,12 @@ noremap <silent> ,k <C-W>k
 noremap <silent> ,l <C-W>l
 
 " some java stuff
-nnoremap <silent> <buffer> ,i :JavaImport<cr>
+function! MapJavaUtils()
+    silent! noremap <silent> ,i :JavaImport<CR>
+    silent! noremap <silent> ,d :JavaDocPreview<CR>
+endfunction
+
+augroup java_utils
+    au!
+    au BufEnter *.java call MapJavaUtils()
+augroup END
