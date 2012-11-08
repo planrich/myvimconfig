@@ -10,3 +10,6 @@
 [submodule "bundle/junglebook-vim"]
 	path = bundle/junglebook-vim
 	url = ssh://git@bitbucket.org/plan_rich/junglebook-vim.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git

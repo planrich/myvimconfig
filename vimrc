@@ -57,17 +57,28 @@ noremap <silent> ,j <C-W>j
 noremap <silent> ,k <C-W>k
 noremap <silent> ,l <C-W>l
 
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+
+set list
+
 " some java stuff
 function! MapJavaUtils()
     silent! noremap <silent> ,i :JavaImport<CR>
     silent! noremap <silent> ,d :JavaDocPreview<CR>
+    silent! noremap <silent> ,f :JavaCorrect<CR>
 endfunction
 
-augroup java_utils
-    au!
-    au BufEnter *.java call MapJavaUtils()
-augroup END
+if has("autocmd")
+    augroup java_utils
+        au!
+        au BufEnter *.java call MapJavaUtils()
+    augroup END
 
-" custom syntax
-syntax enable
-au BufRead,BufNewFile *.kaa set filetype=kaa
+    " custom syntax
+    autocmd BufRead,BufNewFile *.kaa set filetype=kaa
+
+    autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+    autocmd FileType ruby,yaml setlocal ts=2 sw=2 expandtab
+    autocmd FileType kaa setlocal ts=2 sw=2 expandtab
+endif
