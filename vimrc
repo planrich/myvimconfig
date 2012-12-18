@@ -82,3 +82,5 @@ if has("autocmd")
     autocmd FileType ruby,yaml setlocal ts=2 sw=2 expandtab
     autocmd FileType kaa setlocal ts=2 sw=2 expandtab
 endif
+ 
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
