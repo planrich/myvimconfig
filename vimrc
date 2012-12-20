@@ -57,7 +57,7 @@ noremap <silent> ,j <C-W>j
 noremap <silent> ,k <C-W>k
 noremap <silent> ,l <C-W>l
 
-nmap <leader>l :set list!<CR>
+"nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 set list
