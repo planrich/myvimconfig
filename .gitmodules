@@ -10,6 +10,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/xptemplate.git"]
-	path = bundle/xptemplate
-	url = https://github.com/drmingdrmer/xptemplate.git
+[submodule "bundle/kaa-vim"]
+	path = bundle/kaa-vim
+	url = git@bitbucket.org:plan_rich/kaa-vim.git
