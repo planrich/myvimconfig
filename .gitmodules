@@ -13,3 +13,9 @@
 [submodule "bundle/kaa-vim"]
 	path = bundle/kaa-vim
 	url = git@bitbucket.org:plan_rich/kaa-vim.git
+[submodule "bundle/xptemplate"]
+	path = bundle/xptemplate
+	url = git://github.com/vim-scripts/xptemplate.git
+[submodule "bundle/vim-xptemplate"]
+	path = bundle/vim-xptemplate
+	url = git://github.com/vim-scripts/xptemplate.git
