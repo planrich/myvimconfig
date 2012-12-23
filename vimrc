@@ -75,6 +75,11 @@ if has("autocmd")
         au BufEnter *.java call MapJavaUtils()
     augroup END
 
+    augroup waf
+        au!
+        au BufEnter,BufNewFile wscript set filetype=kaa
+    augroup END
+
     " custom syntax
     autocmd BufRead,BufNewFile *.kaa set filetype=kaa
 
