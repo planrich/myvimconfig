@@ -75,10 +75,6 @@ if has("autocmd")
         au BufEnter *.java call MapJavaUtils()
     augroup END
 
-    augroup waf
-        au!
-        au BufEnter,BufNewFile wscript set filetype=kaa
-    augroup END
 
     " custom syntax
     autocmd BufRead,BufNewFile *.kaa set filetype=kaa
@@ -86,6 +82,11 @@ if has("autocmd")
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType ruby,yaml setlocal ts=2 sw=2 expandtab
     autocmd FileType kaa setlocal ts=2 sw=2 expandtab
+
+    augroup waf
+        au!
+        au BufEnter,BufNewFile wscript set filetype=kaa
+    augroup END
 endif
  
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
