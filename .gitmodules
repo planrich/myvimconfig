@@ -25,3 +25,6 @@
 [submodule "bundle/vim-kaa"]
 	path = bundle/vim-kaa
 	url = https://plan_rich@bitbucket.org/plan_rich/kaa-vim.git
+[submodule "bundle/vim-protodef"]
+	path = bundle/vim-protodef
+	url = git://github.com/derekwyatt/vim-protodef.git
