@@ -28,3 +28,6 @@
 [submodule "bundle/vim-protodef"]
 	path = bundle/vim-protodef
 	url = git://github.com/derekwyatt/vim-protodef.git
+[submodule "bundle/vundle"]
+	path = bundle/vundle
+	url = https://github.com/gmarik/vundle.git
