@@ -10,6 +10,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'git://github.com/rollxx/vim-antlr.git'
+
 call pathogen#infect()
 syntax on
 
