@@ -6,6 +6,10 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 call pathogen#infect()
 syntax on
 
