@@ -11,13 +11,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'rollxx/vim-antlr'
+Bundle 'tpope/vim-rails'
 
 call pathogen#infect()
 syntax on
 
 filetype plugin indent on
 
-colo pyte
+colo desert
 
 " dont use tabs
 set expandtab
@@ -95,4 +96,3 @@ if has("autocmd")
     augroup END
 endif
  
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
