@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/rich/proj12/ntry/ntry_site_2_x/config/locales'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/rich/proj12/ntry/ntry_site_2_x/app/views/ntry_mailer'
+let g:netrw_dirhist_2='/Users/rich/proj12/ntry/ntry_site_2_x/app/mailers'
+let g:netrw_dirhist_3='/Users/rich/proj12/ntry/ntry_site_2_x/app'
+let g:netrw_dirhist_4='/Users/rich/proj12/ntry/ntry_site_2_x'
+let g:netrw_dirhist_5='/Users/rich/proj12/ntry/ntry_site_2_x/config'
+let g:netrw_dirhist_6='/Users/rich/proj12/ntry/ntry_site_2_x/config/locales'
+let g:netrw_dirhist_7='/Users/rich/proj12/ntry/ntry_site_2_x/config'
+let g:netrw_dirhist_8='/Users/rich/proj12/ntry/ntry_site_2_x'
