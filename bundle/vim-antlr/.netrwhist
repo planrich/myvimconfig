@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/rich/proj12/ymy/app'
-let g:netrw_dirhist_2='/home/rich/proj12/ymy/app/scripts'
-let g:netrw_dirhist_3='/home/rich/proj12/ymy/app/scripts/vendor'
-let g:netrw_dirhist_4='/home/rich/proj12/ymy/app/scripts/vendor/bootstrap'
-let g:netrw_dirhist_5='/home/rich/proj12/ymy/app/scripts/vendor'
-let g:netrw_dirhist_6='/home/rich/proj12/ymy/app/scripts'
-let g:netrw_dirhist_7='/home/rich/proj12/cmc'
-let g:netrw_dirhist_8='/home/rich/proj12/cmc/config'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/rich/proj12/ntry/ntry_site_2_x/config/locales'
