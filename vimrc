@@ -6,14 +6,27 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 
+let g:email="planrichi@gmail.com"
+let g:template_dir="~/.vim/templates"
+
 filetype off
+
+call pathogen#infect()
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'rollxx/vim-antlr'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/xptemplate'
+Bundle 'sjl/gundo.vim'
+Bundle 'derekwyatt/vim-protodef'
+Bundle 'derekwyatt/vim-fswitch'
+Bundle 'vim-pandoc/vim-pandoc'
 
-call pathogen#infect()
 syntax on
 
 filetype plugin indent on
@@ -59,7 +72,7 @@ noremap <silent> ,mk <C-W>K
 noremap <silent> ,ml <C-W>L
 
 noremap <silent> ,h <C-W>h
-noremap <silent> ,o <C-W>o
+" noremap <silent> ,o <C-W>o
 noremap <silent> ,j <C-W>j
 noremap <silent> ,k <C-W>k
 noremap <silent> ,l <C-W>l
@@ -89,10 +102,12 @@ if has("autocmd")
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType ruby,yaml setlocal ts=2 sw=2 expandtab
     autocmd FileType kaa setlocal ts=2 sw=2 expandtab
+    autocmd FileType python setlocal ts=4 sw=4 expandtab
 
     augroup waf
-        au!
-        au BufEnter,BufNewFile wscript set filetype=kaa
+        au BufEnter,BufNewFile wscript set filetype=python
     augroup END
 endif
  
+
+nmap <silent> <Leader>of :FSHere<cr>
