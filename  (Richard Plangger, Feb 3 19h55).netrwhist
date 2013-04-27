@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/rich/proj12'
-let g:netrw_dirhist_2='/home/rich/proj12/parallel-programming/openmp/3_merge/benchmark'
-let g:netrw_dirhist_3='/Users/rich/lib/jmonkeyengine-read-only/engine/src/core-data/Common/MatDefs/Misc'
