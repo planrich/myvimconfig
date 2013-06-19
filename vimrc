@@ -13,6 +13,8 @@ filetype off
 
 call pathogen#infect()
 
+set ruler
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -26,12 +28,19 @@ Bundle 'sjl/gundo.vim'
 Bundle 'derekwyatt/vim-protodef'
 Bundle 'derekwyatt/vim-fswitch'
 Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-rails'
+Bundle 'altercation/vim-colors-solarized'
 
-syntax on
+syntax enable
+
+if has('gui_running')
+    set background=light
+    colorscheme solarized
+endif
 
 filetype plugin indent on
 
-colo desert
 
 " dont use tabs
 set expandtab
@@ -82,32 +91,34 @@ set listchars=tab:▸\ ,eol:¬
 
 set list
 
-" some java stuff
-function! MapJavaUtils()
-    silent! noremap <silent> ,i :JavaImport<CR>
-    silent! noremap <silent> ,d :JavaDocPreview<CR>
-    silent! noremap <silent> ,f :JavaCorrect<CR>
-endfunction
-
 if has("autocmd")
-    augroup java_utils
-        au!
-        au BufEnter *.java call MapJavaUtils()
-    augroup END
-
 
     " custom syntax
-    autocmd BufRead,BufNewFile *.kaa set filetype=kaa
-
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType ruby,yaml setlocal ts=2 sw=2 expandtab
-    autocmd FileType kaa setlocal ts=2 sw=2 expandtab
     autocmd FileType python setlocal ts=4 sw=4 expandtab
 
     augroup waf
-        au BufEnter,BufNewFile wscript set filetype=python
+            au BufEnter,BufNewFile wscript set filetype=python
+    augroup END
+
+    au BufEnter,BufNewFile *.am set filetype=am
+    augroup hamljs
+        au BufEnter,BufNewFile *.hamljs set filetype=haml
     augroup END
 endif
  
 
 nmap <silent> <Leader>of :FSHere<cr>
+
+imap a ä
+imap A Ä
+imap u ü
+imap U Ü
+imap o ö
+imap O Ö
+imap ss ß
+
+
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#ff2929
