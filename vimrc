@@ -18,19 +18,14 @@ set ruler
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'rollxx/vim-antlr'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'scrooloose/nerdtree'
-Bundle 'vim-scripts/xptemplate'
 Bundle 'sjl/gundo.vim'
 Bundle 'derekwyatt/vim-protodef'
 Bundle 'derekwyatt/vim-fswitch'
-Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-rails'
-Bundle 'altercation/vim-colors-solarized'
 
 syntax enable
 
