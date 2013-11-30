@@ -34,9 +34,13 @@ Bundle 'altercation/vim-colors-solarized'
 
 syntax enable
 
+set background=dark
 if has('gui_running')
     set background=light
-    colorscheme solarized
+    color codeschool
+    "nmap <leader>l :set list!<CR>
+    set listchars=tab:▸\ ,eol:¬
+    set list
 endif
 
 filetype plugin indent on
@@ -86,10 +90,7 @@ noremap <silent> ,j <C-W>j
 noremap <silent> ,k <C-W>k
 noremap <silent> ,l <C-W>l
 
-"nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:¬
 
-set list
 
 if has("autocmd")
 
@@ -120,5 +121,8 @@ imap O Ö
 imap ss ß
 
 
-
 highlight OverLength ctermbg=red ctermfg=white guibg=#ff2929
+
+if has("gui_macvim")
+  set guifont=Andale\ Mono:h14
+endif
