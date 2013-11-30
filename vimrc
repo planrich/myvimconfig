@@ -121,3 +121,6 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#ff2929
 if has("gui_macvim")
   set guifont=Andale\ Mono:h14
 endif
+
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q
